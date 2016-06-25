@@ -1,0 +1,25 @@
+<ion-view view-title="AngelRio">
+  <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Senha" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <div class="row responsive-sm">
+            <div class="col">Login</div>
+          </div>
+                <!--<form ng-submit="loginFacebook()">-->
+                  <button class="button button-block button-positive icon-left ion-social-facebook" ng-click="login()">Facebook</button>
+                <!--</form>  -->
+        </label>
+        <label class="item">
+                <form ng-submit="doLogin()">
+                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Email</button>
+                </form>
+        </label>
+      </div>
+  </ion-content>
+</ion-view>

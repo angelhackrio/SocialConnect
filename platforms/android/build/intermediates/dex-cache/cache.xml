@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="34c5e62e64e68fb93e92fbb34651ecc3439ea7d8">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_6f5b36201a5855d52baa722ef2cf4a2691168852.jar" />
+    </item>
+
+</items>
