@@ -43,7 +43,7 @@ angular.module('starter.controllers', [])
     
     $scope.cadastrar = function(){
         
-        var config = {
+        /*var config = {
                 headers : {
                     'Content-Type': 'application/json;',
                     'Access-Control-Allow-Origin': '*'
@@ -88,18 +88,19 @@ angular.module('starter.controllers', [])
         });
 
 
-        console.log($scope.cadastro);
+        console.log($scope.cadastro);*/
         //userFactory.save($scope.cadastro);
+      $localStorage.storeObject('cadastro', $scope.cadastro);
       $state.go('app.causas');
     }
 })
 
-.controller('CausaController', function($scope, $stateParams, $state, causas) {
-    
-    
+.controller('CausaController', function($scope, $stateParams, $state, $localStorage, causas) {
+    $scope.cadastro = $localStorage.getObject('cadastro','{}');
     //console.log("MANO");
-    console.log(causas.dtos);
-    $scope.causas = causas.dtos; 
+    //console.log(causas.dtos);
+    //$scope.causas = causas.dtos; 
+    $scope.causas = causas;
     //console.log("oi");
   var causasSelecionadas = [];
     
@@ -117,14 +118,19 @@ angular.module('starter.controllers', [])
     
     
   $scope.finalizar =  function(){
+      
+      $localStorage.storeObject('causas', causasSelecionadas);
+      
       //Registrar a zueira no back
       $state.go("app.ongsRelacionadas");
   }    
     
 })
 
-.controller('OngsRelacionadasController', function($scope, $state, $ionicPopup, ongs) {
-  $scope.ongs = ongs;
+.controller('OngsRelacionadasController', function($scope, $state, $ionicPopup, $localStorage, ongs) {
+    $scope.causas = $localStorage.getObject('causas','{}');
+    console.log($scope.causas);
+    $scope.ongs = ongs;
   
   
   // An alert dialog
@@ -132,7 +138,7 @@ angular.module('starter.controllers', [])
     console.log(ong);
     var alertPopup = $ionicPopup.alert({
      //title: ong.descricao,
-     template: '<div class="list card"><div class="item item-avatar"><img src="https://pbs.twimg.com/profile_images/616359485381193728/zgJUwAY9.png"><h2>'+ong.descricao+'</h2><p></p></div><div class="item item-body"><img class="full-image" src="https://pbs.twimg.com/profile_images/616359485381193728/zgJUwAY9.png"><p>This is a "Facebook" styled Card. The header is created from a Thumbnail List item,the content is from a card-body consisting of an image and paragraph text. The footerconsists of tabs, icons aligned left, within the card-footer.</p><p><a href="#" class="subdued">Site</a><a href="#" class="subdued">Facebook</a></p></div></div>'
+     template: '<div class="list card"><div class="item item-avatar"><img src="'+ong.urlIcone+'"><h2>'+ong.descricao+'</h2><p></p></div><div class="item item-body"><img class="full-image" src="'+ong.urlImagem+'"><p>'+ong.texto+'</p><p><a href="#" class="subdued">Site</a><a href="#" class="subdued">Facebook</a></p></div></div>'
    });
     
  }
@@ -145,10 +151,20 @@ $scope.finalizar = function(){
 
 .controller('OfertaController', function($scope, $state, $ionicModal) {
 
-    $scope.ofertaSelecionada = {
+    $scope.ofertas = [{
       nome: "Teto",
-      descricao: "lalalallaaa al allaallalala allala"
-    };
+      descricao: "lalalallaaa al allaallalala allala",
+      data: "01 Jul 2016",
+      urlImagem: "",
+      texto: "Lorem ipsum dolor sit amet"
+    },
+    {
+      nome: "GRAAC",
+      descricao: "Doação de brinquedos",
+      data: "12 Oct 2016",
+      urlImagem: "",
+      texto: "BIRL Lorem ipsum dolor sit amet"
+    }];
     
     $ionicModal.fromTemplateUrl('templates/detalheOferta.html', {
             scope: $scope
@@ -156,9 +172,9 @@ $scope.finalizar = function(){
             $scope.modal = modal;
           });
     
-    $scope.exibirDetalhes = function(){
+    $scope.exibirDetalhes = function(oferta){
         
-        
+            $scope.ofertaSelecionada = oferta;
             $scope.modal.show();
         
     }

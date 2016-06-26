@@ -1,38 +1,5 @@
-/* Empty. Add your own CSS if you like */
-
-input::-webkit-input-placeholder {
-  color: white ;
-}
-input:-moz-placeholder {
-  color: white ;
-}
-input:-ms-input-placeholder { /* IE10+ */
-  color: white ;
-}
-
-.background-padrao{
-    background: #103c6f;
-    border: 0px;
-}
-
-.button.button-positive{
-    background: #209d0c;
-}
-
-.fonte-padrao{
-    color: white;
-}
-
 .logo img {
   display: block;
   height: 300px;
   margin: 0 auto;
-}
-
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-    color: white;   
-}
-
-body {
-    color: white;
 }

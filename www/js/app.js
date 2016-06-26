@@ -93,8 +93,9 @@ angular.module('starter', ['ionic','ionic.service.core', 'ngCordova','starter.co
         controller: 'CausaController',
         resolve: {
             causas:  ['causasFactory', function(causasFactory){
-                var response = causasFactory.query();
-                return response.$promise;
+                //var response = causasFactory.query();
+                //return response.$promise;
+                return causasFactory;
                 /*response.$promise.then(function(data){
                     console.log("response");
                     console.log(data.dtos);

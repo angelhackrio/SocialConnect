@@ -51,9 +51,16 @@ angular.module('starter.services', ['ngResource'])
 })
 
 .factory('causasFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
-  return $resource(baseURL + "causa",
+  /*return $resource(baseURL + "causa",
       { q: '*' }, // Query parameters
-      {'query': { method: 'GET' }});
+      {'query': { method: 'GET' }});*/
+    var causas = [
+      {codigo: 1, descricao: "Moradia popular"},
+      {codigo: 2, descricao: "Doações"},
+      {codigo: 3, descricao: "Crianças"},
+      {codigo: 4, descricao: "Idosos"}    
+  ];
+  return causas;
 }])
 
 .factory('userFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
@@ -64,8 +71,8 @@ angular.module('starter.services', ['ngResource'])
 .factory('ongFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
   //return $resource(baseURL + "causas");
   var ongs = [
-      {codigo: 1, descricao: "GRAAC"},
-      {codigo: 2, descricao: "Fundação Cafú"}
+      {codigo: 1, categoria: 1, descricao: "GRAAC", texto: "Lorem pasdasdansi asoidn nasdionadoinas das", urlImagem:"", urlIcone:""},
+      {codigo: 2, categpria: 2, descricao: "Fundação Cafú", text: "asdiadioahsidaiosdh iohdoasd", urlImagem:"", urlIcone:""}
   ];
   return ongs;
 }])
