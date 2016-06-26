@@ -93,7 +93,13 @@ angular.module('starter', ['ionic','ionic.service.core', 'ngCordova','starter.co
         controller: 'CausaController',
         resolve: {
             causas:  ['causasFactory', function(causasFactory){
-                return causasFactory;
+                var response = causasFactory.query();
+                return response.$promise;
+                /*response.$promise.then(function(data){
+                    console.log("response");
+                    console.log(data.dtos);
+                    return data;
+                });*/
               }]
           }
       }
@@ -111,6 +117,16 @@ angular.module('starter', ['ionic','ionic.service.core', 'ngCordova','starter.co
                 return ongFactory;
               }]
           }
+      }
+    }
+  })
+  
+  .state('app.ofertas', {
+    url: '/ofertas',
+    views: {
+      'mainContent': {
+        templateUrl: 'templates/ofertas.html',
+        controller: 'OfertaController'
       }
     }
   })

@@ -1,25 +1,25 @@
 <ion-view view-title="Cadastro">
-  <ion-content>
+  <ion-content class="background-padrao">
       <div class="list">
-        <label class="item item-input">
-          <input type="text" placeholder="Nome" ng-model="cadastro.nome">
+        <label class="item item-input background-padrao">
+          <input type="text" placeholder="Nome" ng-model="teste">
         </label>
-        <label class="item item-input">
-          <input type="text" placeholder="Email" ng-model="cadastro.email">
+        <label class="item item-input background-padrao">
+          <input type="text" placeholder="Email" ng-model="cadastro.username">
         </label>
-        <label class="item item-input">
-          <input type="password" placeholder="Senha" ng-model="loginData.password">
+        <label class="item item-input background-padrao">
+          <input type="password" placeholder="Senha" ng-model="cadastro.password">
         </label>
-        <div class="item item-divider">
+        <div class="item item-divider background-padrao">
             Eu sou: 
         </div>
 
         <ion-list>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'VOLUNTARIO'">Voluntário</ion-radio>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'ONG'">ONG</ion-radio>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'EMPRESA'">Empresa</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'VOLUNTARIO'">Voluntário</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'ONG'">ONG</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'EMPRESA'">Empresa</ion-radio>
         </ion-list>
-        <label class="item">
+        <label class="item background-padrao">
                 <form ng-submit="cadastrar()">
                     <button class="button button-block button-positive icon-left ion-android-mail" type="submit">Cadastrar</button>
                 </form>

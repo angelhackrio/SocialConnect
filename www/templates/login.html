@@ -1,21 +1,22 @@
 <ion-view view-title="AngelRio">
-  <ion-content>
-      <div class="list">
-        <label class="item item-input">
+  <ion-content class="background-padrao">
+      <div class="list" class="background-padrao">
+        <div class="logo">
+        <img src="img/logo.png">
+      </div>
+    
+        <label class="item item-input background-padrao">
           <input type="text" placeholder="Email" ng-model="loginData.username">
         </label>
-        <label class="item item-input">
+        <label class="item item-input background-padrao">
           <input type="password" placeholder="Senha" ng-model="loginData.password">
         </label>
-        <label class="item">
-          <div class="row responsive-sm">
-            <div class="col">Login</div>
-          </div>
+        <label class="item background-padrao">
             <button class="button button-block button-positive" ng-click="cadastrar()">Cadastrar</button>
         </label>
-        <label class="item">
+        <label class="item background-padrao">
                 <form ng-submit="doLogin()">
-                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Login</button>
+                    <button class="button button-block button-outline button-light icon-left ion-android-mail" type="submit">Login</button>
                 </form>
         </label>
       </div>

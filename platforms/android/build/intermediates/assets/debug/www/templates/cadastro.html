@@ -2,22 +2,22 @@
   <ion-content>
       <div class="list">
         <label class="item item-input">
-          <input type="text" placeholder="Nome" ng-model="cadastro.nome">
+          <input type="text" placeholder="Nome" ng-model="teste">
         </label>
         <label class="item item-input">
-          <input type="text" placeholder="Email" ng-model="cadastro.email">
+          <input type="text" placeholder="Email" ng-model="cadastro.username">
         </label>
         <label class="item item-input">
-          <input type="password" placeholder="Senha" ng-model="loginData.password">
+          <input type="password" placeholder="Senha" ng-model="cadastro.password">
         </label>
         <div class="item item-divider">
             Eu sou: 
         </div>
 
         <ion-list>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'VOLUNTARIO'">Voluntário</ion-radio>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'ONG'">ONG</ion-radio>
-          <ion-radio ng-model="cadastro.categoria" ng-value="'EMPRESA'">Empresa</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'VOLUNTARIO'">Voluntário</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'ONG'">ONG</ion-radio>
+          <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'EMPRESA'">Empresa</ion-radio>
         </ion-list>
         <label class="item">
                 <form ng-submit="cadastrar()">

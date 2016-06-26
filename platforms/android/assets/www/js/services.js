@@ -1,5 +1,5 @@
 angular.module('starter.services', ['ngResource'])
-.constant("baseURL","http://192.168.1.104:3000/")
+.constant("baseURL","http://10.18.242.109:8080/")
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -51,13 +51,15 @@ angular.module('starter.services', ['ngResource'])
 })
 
 .factory('causasFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
-  //return $resource(baseURL + "causas");
-  var causas = [
-      {codigo: 1, descricao: "Categoria1"},
-      {codigo: 2, descricao: "Categoria2"}
-  ];
-  return causas;
+  return $resource(baseURL + "causa",
+      { q: '*' }, // Query parameters
+      {'query': { method: 'GET' }});
 }])
+
+.factory('userFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
+  return $resource(baseURL + "user");
+}])
+
 
 .factory('ongFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
   //return $resource(baseURL + "causas");

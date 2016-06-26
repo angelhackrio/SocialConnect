@@ -11,9 +11,9 @@
       </div>
         <ul class="list">
             <li class="item item-toggle" ng-repeat="causa in causas">
-                 {{causa.descricao}}
+                 {{causa.nome}}
                  <label class="toggle toggle-assertive">
-                   <input type="checkbox" ng-click="registrarItem({{causa.codigo}})">
+                   <input type="checkbox" ng-click="registrarItem({{causa.id}})">
                    <div class="track">
                      <div class="handle"></div>
                    </div>
