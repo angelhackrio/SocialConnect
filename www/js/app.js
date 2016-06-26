@@ -7,13 +7,15 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic','ionic.service.core', 'ngCordova','starter.controllers', 'starter.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $state, $localStorage) {
   $ionicPlatform.ready(function() {
       // Enable to debug issues.
   // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
   
   var notificationOpenedCallback = function(jsonData) {
     console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+    $localStorage.storeObject('emergencia', true);
+    $state.go('app.ofertas');
   };
 
   window.plugins.OneSignal.init("e8e191cf-c5b0-493e-a9b7-2aac93a7a4cf",

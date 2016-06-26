@@ -1,11 +1,10 @@
 <ion-view view-title="AngelRio">
   <ion-content class="background-padrao">
       <div class="list" class="background-padrao">
-        <div class="row">
-          <div class="item item-image">
-            <img src="img/logo.png" height="20%">
-          </div>
-        </div>    
+        <div class="logo">
+        <img src="img/logo.png">
+      </div>
+    
         <label class="item item-input background-padrao">
           <input type="text" placeholder="Email" ng-model="loginData.username">
         </label>
@@ -17,7 +16,7 @@
         </label>
         <label class="item background-padrao">
                 <form ng-submit="doLogin()">
-                    <button class="button button-block button-outline button-light icon-left ion-android-mail" type="submit">Login</button>
+                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Login</button>
                 </form>
         </label>
       </div>

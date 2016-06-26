@@ -1,14 +1,17 @@
 <ion-view view-title="Campanhas Ativas">
-  <ion-content>
+  <ion-content class="background-padrao">
       <div class="row">
-        <h5>Na sua região: </h5>
+        <h5>Na região: </h5>
       </div>
       <div class="list">
-        <a class="item item-avatar" ng-click="exibirDetalhes()">
-          <img src="https://pbs.twimg.com/profile_images/616359485381193728/zgJUwAY9.png">
-          <h2>TETO</h2>
-          <p>Construção de casas, no Dona Marta</p>
-        </a>
+            <a class="item item-avatar" ng-repeat="oferta in ofertas">
+             <div ng-click="exibirDetalhes(oferta)">
+              <img src="{{oferta.urlImagem}}">
+              <h2>{{oferta.nome}}</h2>
+              <p>{{oferta.descricao}}</p>
+            </div>
+            </a>    
+            
     </div>
   </ion-content>
 </ion-view>

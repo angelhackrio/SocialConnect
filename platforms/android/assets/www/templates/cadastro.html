@@ -1,16 +1,16 @@
 <ion-view view-title="Cadastro">
-  <ion-content>
+  <ion-content class="background-padrao">
       <div class="list">
-        <label class="item item-input">
-          <input type="text" placeholder="Nome" ng-model="teste">
+        <label class="item item-input background-padrao">
+          <input type="text" placeholder="Nome" ng-model="cadastro.nome">
         </label>
-        <label class="item item-input">
+        <label class="item item-input background-padrao">
           <input type="text" placeholder="Email" ng-model="cadastro.username">
         </label>
-        <label class="item item-input">
+        <label class="item item-input background-padrao">
           <input type="password" placeholder="Senha" ng-model="cadastro.password">
         </label>
-        <div class="item item-divider">
+        <div class="item item-divider background-divisor">
             Eu sou: 
         </div>
 
@@ -19,7 +19,7 @@
           <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'ONG'">ONG</ion-radio>
           <ion-radio ng-model="cadastro.tipoUsuarioEnum" ng-value="'EMPRESA'">Empresa</ion-radio>
         </ion-list>
-        <label class="item">
+        <label class="item background-padrao">
                 <form ng-submit="cadastrar()">
                     <button class="button button-block button-positive icon-left ion-android-mail" type="submit">Cadastrar</button>
                 </form>

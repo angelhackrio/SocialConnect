@@ -149,9 +149,18 @@ $scope.finalizar = function(){
 
 })
 
-.controller('OfertaController', function($scope, $state, $ionicModal) {
+.controller('OfertaController', function($scope, $state, $ionicModal, $localStorage) {
 
-    $scope.ofertas = [{
+    if($localStorage.getObject('emergencia', false)){
+      $scope.ofertas = [{
+      nome: "Cruz Vermelha",
+      descricao: "Deslizamentos de terra na região serrana",
+      data: "25 Jun 2016",
+      urlImagem: "",
+      texto: "Devido a alta histórica das chuvas para este mes, 50 famílias estão desabrigadas. Precisamos de roupas e itens de higiene"
+    }];  
+    } else {
+      $scope.ofertas = [{
       nome: "Teto",
       descricao: "lalalallaaa al allaallalala allala",
       data: "01 Jul 2016",
@@ -164,7 +173,10 @@ $scope.finalizar = function(){
       data: "12 Oct 2016",
       urlImagem: "",
       texto: "BIRL Lorem ipsum dolor sit amet"
-    }];
+    }];    
+    }
+    
+    
     
     $ionicModal.fromTemplateUrl('templates/detalheOferta.html', {
             scope: $scope
