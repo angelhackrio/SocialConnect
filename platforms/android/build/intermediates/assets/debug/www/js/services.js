@@ -71,9 +71,25 @@ angular.module('starter.services', ['ngResource'])
 .factory('ongFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
   //return $resource(baseURL + "causas");
   var ongs = [
-      {codigo: 1, categoria: 1, descricao: "GRAAC", texto: "Lorem pasdasdansi asoidn nasdionadoinas das", urlImagem:"", urlIcone:""},
-      {codigo: 2, categpria: 2, descricao: "Fundação Cafú", text: "asdiadioahsidaiosdh iohdoasd", urlImagem:"", urlIcone:""}
-  ];
+      {codigo: 1, 
+	categoria: 3, 
+	descricao: "ARPEF", 
+	texto: "A Associação de Reabilitação e Pesquisa Fonoaudiológica – ARPEF – é uma instituição civil, sem fins lucrativos, fundada em 1986 por uma equipe de profissionais das áreas de Fonoaudiologia, Psicologia e Psicopedagogia. Todos com especialização na Metodologia Verbotonal. ", 
+	urlImagem: "http://www.arpef.org.br/img/logo.gif", 
+	urlIcone: "http://www.arpef.org.br/img/logo.gif"}, 
+{codigo: 2, 
+	categoria: 4, 
+	descricao: "Centro de Convivência para Idosos Vila do Sol", 
+	texto: "O Residencial e Centro de Convivência para Idosos Vila do Sol é uma casa tranquila e confortável, onde você encontra: repouso, lazer, atividades terapêuticas, alimentação balanceada, socialização, cuidados, atenção e carinho.Temos acomodações confortáveis, estacionamento no ...", 
+	urlImagem: "http://www.casaderepousoviladosol.com.br/hosting/imagens/7835116.png", 
+	urlIcone: "http://www.casaderepousoviladosol.com.br/hosting/imagens/7835116.png"}, 
+	{codigo: 3, 
+		categoria: 2, 
+		descricao: "TETO", 
+		texto: "Instituição sem fins lucrativos cuja missão é favorecer o processo de transformação social por meio de trabalho socioeducativo junto às comunidades em situação de risco e exclusão, com atenção à criança e ao adolescente. Desde 1992, o Movimento tem concentrado seu trabalho ...",
+		urlImagem: "http://www.techo.org/paises/brasil/wp-content/uploads/2014/01/Logo-TETO.png", 
+		urlIcone: "http://www.techo.org/paises/brasil/wp-content/uploads/2014/01/Logo-TETO.png"}
+      ];
   return ongs;
 }])
 

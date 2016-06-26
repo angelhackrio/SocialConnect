@@ -1,18 +1,10 @@
-<ion-view view-title="Suas causas">
+<ion-view view-title="">
   <ion-content class="background-padrao">
-      <div class="row background-padrao">
-        <h1>{{cadastro.nome}},</h1>
-      </div>
-      <div class="row background-padrao">
-        <h5>Bem vindo ao AngelRio</h5>
-      </div>
-      <div class="row background-padrao">
-        <h5>Quais causas você quer ajudar?</h5>
-      </div>
+        <center><h5>{{cadastro.nome}}, quais causas você deseja ajudar?</h5></center>
         <ul class="list background-padrao">
             <li class="item item-toggle" ng-repeat="causa in causas">
                  {{causa.descricao}}
-                 <label class="toggle toggle-assertive">
+                 <label class="toggle toggle-balanced">
                    <input type="checkbox" ng-click="registrarItem({{causa.codigo}})">
                    <div class="track">
                      <div class="handle"></div>
