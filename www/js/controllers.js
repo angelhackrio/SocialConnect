@@ -131,6 +131,7 @@ angular.module('starter.controllers', [])
     $scope.causas = $localStorage.getObject('causas','{}');
     console.log($scope.causas);
     $scope.ongs = ongs;
+    $scope.cadastro = $localStorage.getObject('cadastro','{}');
   
   
   // An alert dialog
@@ -156,23 +157,23 @@ $scope.finalizar = function(){
       nome: "Cruz Vermelha",
       descricao: "Deslizamentos de terra na região serrana",
       data: "25 Jun 2016",
-      urlImagem: "",
+      urlImagem: "http://static.wixstatic.com/media/dbd7a7_af22085fd0194feb95c3da28c6c24071.gif",
       texto: "Devido a alta histórica das chuvas para este mes, 50 famílias estão desabrigadas. Precisamos de roupas e itens de higiene"
     }];  
     } else {
       $scope.ofertas = [{
       nome: "Teto",
-      descricao: "lalalallaaa al allaallalala allala",
-      data: "01 Jul 2016",
-      urlImagem: "",
-      texto: "Lorem ipsum dolor sit amet"
+      descricao: "Reconstrução de casas destruídas pelos deslizamentos",
+      data: "01 Nov 2016",
+      urlImagem: "https://pbs.twimg.com/profile_images/616359485381193728/zgJUwAY9.png",
+      texto: "As últimas chuvas castigaram a região serrana do Rio, porém com as doações de vários cidadãos será possível dar alegria a estes moradores, agora precisamos de voluntários para auxilizar na construção de novas casas sustentáveis em madeira."
     },
     {
       nome: "GRAAC",
       descricao: "Doação de brinquedos",
       data: "12 Oct 2016",
-      urlImagem: "",
-      texto: "BIRL Lorem ipsum dolor sit amet"
+      urlImagem: "https://www.graacc.org.br/media/169482/graacc_logo.jpg",
+      texto: "Comemoração do Dia das crianças GRAAC, traga o seu brinquedo novo ou usado!"
     }];    
     }
     

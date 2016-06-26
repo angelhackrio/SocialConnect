@@ -1,4 +1,4 @@
-<ion-view view-title="AngelRio">
+<ion-view view-title="">
   <ion-content class="background-padrao">
       <div class="list" class="background-padrao">
         <div class="logo">
@@ -11,13 +11,14 @@
         <label class="item item-input background-padrao">
           <input type="password" placeholder="Senha" ng-model="loginData.password">
         </label>
-        <label class="item background-padrao">
-            <button class="button button-block button-positive" ng-click="cadastrar()">Cadastrar</button>
-        </label>
-        <label class="item background-padrao">
+          <br>
+          <label class="background-padrao">
                 <form ng-submit="doLogin()">
-                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Login</button>
+                    <button class="button button-block button-balanced" type="submit">Login</button>
                 </form>
+        </label>
+        <label class="background-padrao">
+            <button class="button button-block button-positive" ng-click="cadastrar()">Cadastrar</button>
         </label>
       </div>
   </ion-content>
