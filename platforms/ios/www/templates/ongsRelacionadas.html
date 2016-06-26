@@ -1,0 +1,24 @@
+<ion-view view-title="Conheça">
+  <ion-content>
+      <div class="row">
+        <h5>Usuário, baseado nas suas causas indicamos as seguintes ONGs na sua área</h5>
+      </div>
+      <div class="row">
+        <h5>Quer conhecer mais? Clique na ONG desejada</h5>
+      </div>
+      <div class="list card">
+          <ion-list>
+              <ion-item ng-repeat="ong in ongs">
+                  <a class="item" ng-click="obterDetalhes({{ong}})">
+                    {{ong.descricao}}
+                  </a>
+              </ion-item>
+          </ion-list>
+      </div>
+      <label class="item">
+        <form ng-submit="finalizar()">
+            <button class="button button-block button-stable button-positive" type="submit">Próximo</button>
+        </form>
+      </label>
+  </ion-content>
+</ion-view>

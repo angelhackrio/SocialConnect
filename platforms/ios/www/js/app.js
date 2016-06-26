@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic','ionic.service.core', 'ngCordova','starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -56,6 +56,46 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'mainContent': {
         templateUrl: 'templates/login.html',
         controller: 'LoginController'
+      }
+    }
+  })
+  
+  .state('app.cadastro', {
+    url: '/cadastro',
+    views: {
+      'mainContent': {
+        templateUrl: 'templates/cadastro.html',
+        controller: 'CadastroController'
+      }
+    }
+  })
+  
+  .state('app.causas', {
+    url: '/causas',
+    views: {
+      'mainContent': {
+        templateUrl: 'templates/causas.html',
+        controller: 'CausaController',
+        resolve: {
+            causas:  ['causasFactory', function(causasFactory){
+                return causasFactory;
+              }]
+          }
+      }
+    }
+  })
+  
+  .state('app.ongsRelacionadas', {
+    url: '/ongsRelacionadas',
+    views: {
+      'mainContent': {
+        templateUrl: 'templates/ongsRelacionadas.html',
+        controller: 'OngsRelacionadasController',
+        resolve: {
+            ongs:  ['ongFactory', function(ongFactory){
+                return ongFactory;
+              }]
+          }
       }
     }
   })

@@ -2,11 +2,109 @@
 <items version="2" >
 
     <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="cf16220db9128d91a215aedc739584181d5ca6a4">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.0.2_50b5c0caf38b03cf046b9d693f2b35e37c35a6dc.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e6970f0554f9508c041f1f6960af15cc888c9f35">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.0.2_2e4ca929c78d2f3db8226f417f2b0500b1da581a.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-23.0.0_cde0451281035b1c3c4069fd4093a2d9894630d1.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_f5e28b983cc8710f42d286bcf3fef7cc87e32aa7.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_1393356ea595a44e60d6182e78d7f4d0212ad723.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="fe5b47e764869f1076cb9cfe12801ed2ef4e9117">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.0.2_db5d1bf4b07b1cfe025c6ce31370dc702383271a.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.onesignal/OneSignal/2.4.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="18031b17505685ce7d249da74033d76efcc066d7">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.onesignal-OneSignal-2.4.3_f335597cd1e44e0e58b80a6f77adcce607df3951.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_1d7b8b52e9ba6df4f2483a1a105352fa866cb08b.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.0.2_05be67949cebab0cc2b5ccccdc58ccf1e42ea9b0.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_aeb7bee9034749fdb10710c1a362b2b495ebef21.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_0a4020c0a92d0d99bc36951819d550dfaca9e238.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.0_4eb9c15f8ef29080dcdb10ab1c8555ecc5229420.jar" />
+    </item>
+    <item
         jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="34c5e62e64e68fb93e92fbb34651ecc3439ea7d8">
         <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_6f5b36201a5855d52baa722ef2cf4a2691168852.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.0.2_92c9759935ab904d2691ce576dec5f17276c5dc3.jar" />
+    </item>
+    <item
+        jar="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6c58c14d15602fea2c50138c73bb107e8b832b62">
+        <dex dex="/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.0.2_52999d8b39f4718bb0197472d3b2397faca7f70f.jar" />
     </item>
 
 </items>

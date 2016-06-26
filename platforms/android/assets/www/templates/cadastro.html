@@ -1,0 +1,29 @@
+<ion-view view-title="Cadastro">
+  <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Nome" ng-model="cadastro.nome">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="cadastro.email">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Senha" ng-model="loginData.password">
+        </label>
+        <div class="item item-divider">
+            Eu sou: 
+        </div>
+
+        <ion-list>
+          <ion-radio ng-model="cadastro.categoria" ng-value="'VOLUNTARIO'">Voluntário</ion-radio>
+          <ion-radio ng-model="cadastro.categoria" ng-value="'ONG'">ONG</ion-radio>
+          <ion-radio ng-model="cadastro.categoria" ng-value="'EMPRESA'">Empresa</ion-radio>
+        </ion-list>
+        <label class="item">
+                <form ng-submit="cadastrar()">
+                    <button class="button button-block button-positive icon-left ion-android-mail" type="submit">Cadastrar</button>
+                </form>
+        </label>
+      </div>
+  </ion-content>
+</ion-view>

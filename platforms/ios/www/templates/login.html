@@ -11,67 +11,13 @@
           <div class="row responsive-sm">
             <div class="col">Login</div>
           </div>
-                <!--<form ng-submit="loginFacebook()">-->
-                  <button class="button button-block button-positive icon-left ion-social-facebook" ng-click="login()">Facebook</button>
-                <!--</form>  -->
+            <button class="button button-block button-positive" ng-click="cadastrar()">Cadastrar</button>
         </label>
         <label class="item">
                 <form ng-submit="doLogin()">
-                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Email</button>
+                    <button class="button button-block button-stable icon-left ion-android-mail" type="submit">Login</button>
                 </form>
         </label>
       </div>
   </ion-content>
-    <script>
-		// initialize and setup facebook js sdk
-		window.fbAsyncInit = function() {
-		    FB.init({
-		      appId      : '744739418962088',
-		      xfbml      : true,
-		      version    : 'v2.6'
-		    });
-		    FB.getLoginStatus(function(response) {
-		    	if (response.status === 'connected') {
-		    		//document.getElementById('status').innerHTML = 'We are connected.';
-		    		document.getElementById('login').style.visibility = 'hidden';
-		    	} else if (response.status === 'not_authorized') {
-		    		//document.getElementById('status').innerHTML = 'We are not logged in.'
-		    	} else {
-		    		//document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
-		    	}
-		    });
-		};
-		(function(d, s, id){
-		    var js, fjs = d.getElementsByTagName(s)[0];
-		    if (d.getElementById(id)) {return;}
-		    js = d.createElement(s); js.id = id;
-		    js.src = "//connect.facebook.net/en_US/sdk.js";
-		    fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		
-		// login with facebook with extra permissions
-		function login() {
-            console.log("Olar");
-			FB.login(function(response) {
-				if (response.status === 'connected') {
-			    		//document.getElementById('status').innerHTML = 'We are connected.';
-			    		document.getElementById('login').style.visibility = 'hidden';
-					getInfo();
-		    	} else if (response.status === 'not_authorized') {
-		    		//document.getElementById('status').innerHTML = 'We are not logged in.'
-		    	} else {
-		    		//document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
-		    	}
-			}, {scope: 'email'});
-		}
-		
-		// getting basic user info
-		function getInfo() {
-			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
-				//document.getElementById('status').innerHTML = response.id;
-				//document.getElementById('status').value = response.first_name;
-				window.location.href = "https://localhost:8080/logged?id=" + response.id + "&name=" + response.first_name + "&last_name=" + response.last_name;
-			});
-		}
-	</script>
 </ion-view>

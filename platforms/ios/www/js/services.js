@@ -1,4 +1,5 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['ngResource'])
+.constant("baseURL","http://192.168.1.104:3000/")
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -47,4 +48,40 @@ angular.module('starter.services', [])
       return null;
     }
   };
-});
+})
+
+.factory('causasFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
+  //return $resource(baseURL + "causas");
+  var causas = [
+      {codigo: 1, descricao: "Categoria1"},
+      {codigo: 2, descricao: "Categoria2"}
+  ];
+  return causas;
+}])
+
+.factory('ongFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
+  //return $resource(baseURL + "causas");
+  var ongs = [
+      {codigo: 1, descricao: "GRAAC"},
+      {codigo: 2, descricao: "Fundação Cafú"}
+  ];
+  return ongs;
+}])
+
+
+.factory('$localStorage', ['$window', function($window) {
+  return {
+    store: function(key, value) {
+      $window.localStorage[key] = value;
+    },
+    get: function(key, defaultValue) {
+      return $window.localStorage[key] || defaultValue;
+    },
+    storeObject: function(key, value) {
+      $window.localStorage[key] = JSON.stringify(value);
+    },
+    getObject: function(key,defaultValue) {
+      return JSON.parse($window.localStorage[key] || defaultValue);
+    }
+  }
+}]);

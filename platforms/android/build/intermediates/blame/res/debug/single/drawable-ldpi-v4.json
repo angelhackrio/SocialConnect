@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/drawable-ldpi-v4/common_ic_googleplayservices.png",
+        "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
+    },
+    {
         "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
         "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/res/drawable-ldpi/icon.png"
     }

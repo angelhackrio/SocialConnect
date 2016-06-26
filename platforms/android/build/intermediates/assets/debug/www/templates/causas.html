@@ -1,0 +1,30 @@
+<ion-view view-title="Suas causas">
+  <ion-content>
+      <div class="row">
+        <h1>Usuário</h1>
+      </div>
+      <div class="row">
+        <h5>Bem vindo ao AngelRio</h5>
+      </div>
+      <div class="row">
+        <h5>Quais causas você quer ajudar?</h5>
+      </div>
+        <ul class="list">
+            <li class="item item-toggle" ng-repeat="causa in causas">
+                 {{causa.descricao}}
+                 <label class="toggle toggle-assertive">
+                   <input type="checkbox" ng-click="registrarItem({{causa.codigo}})">
+                   <div class="track">
+                     <div class="handle"></div>
+                   </div>
+                 </label>
+              </li>
+          </ul>
+      <label class="item">
+        
+      <form ng-submit="finalizar()">
+                    <button class="button button-block button-stable button-positive" type="submit">Próximo</button>
+                </form>
+      </label>
+  </ion-content>
+</ion-view>

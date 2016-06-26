@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
+        "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
+        "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/layout/place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/cezar_aug/Documents/Ambientes/Projetos/AngelhackRio/angelRio/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/layout/place_autocomplete_item_powered_by_google.xml"
+    }
+]
