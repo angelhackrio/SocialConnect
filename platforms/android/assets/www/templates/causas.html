@@ -2,9 +2,9 @@
   <ion-content class="background-padrao">
         <center><h5>{{cadastro.nome}}, quais causas você deseja ajudar?</h5></center>
         <ul class="list background-padrao">
-            <li class="item item-toggle" ng-repeat="causa in causas">
+            <li class="item item-toggle sem-borda" ng-repeat="causa in causas">
                  {{causa.descricao}}
-                 <label class="toggle toggle-balanced">
+                 <label class="toggle toggle-balanced sem-borda">
                    <input type="checkbox" ng-click="registrarItem({{causa.codigo}})">
                    <div class="track">
                      <div class="handle"></div>
@@ -12,7 +12,7 @@
                  </label>
               </li>
           </ul>
-      <label class="item">
+      <label class="item sem-borda">
         
       <form ng-submit="finalizar()">
         <button class="button button-block button-stable button-positive" type="submit">Próximo</button>
